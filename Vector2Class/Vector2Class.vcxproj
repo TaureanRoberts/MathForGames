@@ -18,15 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Vector2.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2C5D7FD2-6E19-49C5-8E7A-D53DFCA8EAB3}</ProjectGuid>
-    <RootNamespace>Vectors</RootNamespace>
+    <ProjectGuid>{9955441A-1F0A-407C-970D-6033352F8A26}</ProjectGuid>
+    <RootNamespace>Vector2Class</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,6 +109,15 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Vectors2.h" />
+    <ClInclude Include="Vectors3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Vectors3.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Vectors2.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
