@@ -7,7 +7,9 @@ public:
 	float mZ;
 	Vector3();
 	Vector3(float x, float y, float z);
-	Vector3 AddThings(Vector3 &other);
-	Vector3 SubThings(Vector3 &other);
-	Vector3 ScaleThings(float other);
+	Vector3 operator+(Vector3 &other);
+	Vector3 operator-(Vector3 &other);
+	Vector3 operator*(float other);
+	Vector3 Normalize();
+	float Magnitude();
 };

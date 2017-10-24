@@ -13,25 +13,33 @@ Vector2::Vector2(float x, float y)
 Vector2 Vector2::operator+(Vector2 & other)
 {
 	Vector2 Sum;
-	Vector2 Sum2;
-	Sum.mX = other.mX + Sum2.mY;
-	Sum.mY = other.mY + Sum2.mX;
+	Sum.mX = other.mX + mX;
+	Sum.mY = other.mY + mY;
 	return Sum;
 }
 
 Vector2 Vector2::operator-(Vector2 & other)
 {
 	Vector2 Sub;
-	Vector2 Sub2;
-	Sub.mX = other.mX - Sub2.mX;
-	Sub.mY = other.mY - Sub2.mY;
+	Sub.mX = other.mX - mX;
+	Sub.mY = other.mY - mY;
 	return Sub;
 }
 
 Vector2 Vector2::operator*(float other)
 {
 	float scale;
-
+	
 
 	return ;
+}
+
+Vector2 Vector2::Normalize()
+{
+	return Vector2();
+}
+
+float Vector2::Magnitude()
+{
+	return 0.0f;
 }
