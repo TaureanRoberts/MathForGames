@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vectors", "Vectors\Vectors.vcxproj", "{2C5D7FD2-6E19-49C5-8E7A-D53DFCA8EAB3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector2Class", "Vector2Class\Vector2Class.vcxproj", "{9955441A-1F0A-407C-970D-6033352F8A26}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorClass", "Vector2Class\Vector2Class.vcxproj", "{9955441A-1F0A-407C-970D-6033352F8A26}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMAssignment", "AMAssignment\AMAssignment.vcxproj", "{8FA8B1A7-73B0-45B3-AADB-A81D33655447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{9955441A-1F0A-407C-970D-6033352F8A26}.Release|x64.Build.0 = Release|x64
 		{9955441A-1F0A-407C-970D-6033352F8A26}.Release|x86.ActiveCfg = Release|Win32
 		{9955441A-1F0A-407C-970D-6033352F8A26}.Release|x86.Build.0 = Release|Win32
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Debug|x64.ActiveCfg = Debug|x64
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Debug|x64.Build.0 = Debug|x64
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Debug|x86.Build.0 = Debug|Win32
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Release|x64.ActiveCfg = Release|x64
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Release|x64.Build.0 = Release|x64
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Release|x86.ActiveCfg = Release|Win32
+		{8FA8B1A7-73B0-45B3-AADB-A81D33655447}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

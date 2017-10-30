@@ -9,7 +9,10 @@ public:
 	Vector3(float x, float y, float z);
 	Vector3 operator+(Vector3 &other);
 	Vector3 operator-(Vector3 &other);
-	Vector3 operator*(float other);
-	Vector3 Normalize();
+	Vector3 operator*(float &other);
+	bool operator == (Vector3 &other);
+	float Dot(Vector3 &other);
+	Vector3 Cross(Vector3 &other);
 	float Magnitude();
+    Vector3 Normalize();
 };
