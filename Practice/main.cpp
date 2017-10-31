@@ -1,8 +1,7 @@
 #include <iostream>
 #include "math.h"
-void* Add(int lhs[], int rhs[], int results);
 
-void* Add(int lhs[], int rhs[], int results)
+void Add(int lhs[], int rhs[], int results)
 {
 	int addNum = results;
 	int i = 0;
