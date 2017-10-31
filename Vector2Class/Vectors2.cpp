@@ -71,19 +71,20 @@ float Vector2::Magnitude()
 Vector2 Vector2::Normalize()
 {
 	Vector2 mNorm;
-
+	mNorm.mX = mX / Magnitude();
+	mNorm.mY = mY / Magnitude();
 	return mNorm;
 }
 
-ostream & operator<<(ostream & output, Vector2 & other)
+ostream & operator<<(ostream & output, Vector2 &other)
 {
-
-	// TODO: insert return statement here
+	output << "< " << other.mX <<" , "<< other.mY << " >" << endl;
+	return output;
 }
 
 istream & operator >> (istream &input, Vector2 &other)
 {
-	Vector2 *vect2 = new Vector2[255];
-
+	input >> other.mX;
+	input >> other.mY;
 	return  input;
 }
