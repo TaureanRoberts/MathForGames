@@ -111,10 +111,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Vector4.h" />
     <ClInclude Include="Vectors2.h" />
     <ClInclude Include="Vectors3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Vector4.cpp" />
     <ClCompile Include="Vectors3.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Vectors2.cpp" />

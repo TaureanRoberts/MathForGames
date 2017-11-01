@@ -5,7 +5,6 @@
 using namespace std;
 Vector2::Vector2()
 {
-	Vector2 *Vectors = new Vector2[255];
 }
 
 Vector2::Vector2(float x, float y)
@@ -44,13 +43,7 @@ bool Vector2::operator==(Vector2 &other)
 	{
 		return false;
 	}
-	for (int i = 0; i <= mX||mY ;i++)
-	{
-		if ((i != other.mX )||(i != other.mY))
-		{
-			return false;
-		}
-	}
+	else
 	return true;
 }
 
