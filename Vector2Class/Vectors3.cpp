@@ -82,14 +82,12 @@ Vector3 Vector3::Normalize()
 
 ostream & operator<<(ostream & output, Vector3 & other)
 {
-	
 	output << "< " << other.mX << " , " << other.mY << " , " << other.mZ << " > " << endl;
 	return output;
 }
 
 istream & operator >> (istream & input, Vector3 & other)
 {
-    cout << "Place 3 numbs" << endl;
 	input >> other.mX;
 	input >> other.mY;
 	input >> other.mZ;
