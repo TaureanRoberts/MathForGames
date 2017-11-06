@@ -6,8 +6,9 @@ class Matrix3
 {
 public:
 	float mMat[];
+	Matrix3();
 	Matrix3(float mat[]);
-	Matrix3(float indexA, float indexB, float indexC, float indexD);
+	Matrix3(float indexA, float indexB, float indexC, float indexD, float indexE, float indexF);
 	Matrix3 operator +(Matrix3 &other);
 	Matrix3 operator -(Matrix3 &other);
 	Matrix3 operator *(Matrix3 &other);

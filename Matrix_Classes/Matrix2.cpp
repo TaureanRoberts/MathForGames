@@ -13,9 +13,9 @@ Matrix2::Matrix2(float mat[])
 
 Matrix2::Matrix2(float indexA, float indexB, float indexC, float indexD)
 {
-	mMat[4] = indexA;
-	mMat[4] = indexB;
-	mMat[4] = indexC;
+	mMat[1] = indexA;
+	mMat[2] = indexB;
+	mMat[3] = indexC;
 	mMat[4] = indexD;
 }
 
@@ -51,12 +51,16 @@ Matrix2 Matrix2::operator*(Matrix2 & other)
 
 ostream & operator<<(ostream & output, Matrix2 & other)
 {
-	
-	// TODO: insert return statement here
+	output << "< " << other.mMat[1] << " , " << other.mMat[2] <<" , " << other.mMat[3]<<" >" << endl;
+	output << "< " << other.mMat[4] << " , " << other.mMat[5] << " >" << endl;
+	return output;
 }
 
 istream & operator >> (istream & input, Matrix2 & other)
 {
-
-	// TODO: insert return statement here
+	input >> other.mMat[1];
+	input >> other.mMat[2];
+	input >> other.mMat[3];
+	input >> other.mMat[4];
+	return input;
 }
