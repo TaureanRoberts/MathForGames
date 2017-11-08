@@ -11,14 +11,12 @@ Matrix3::Matrix3(float mat[])
 	mMat[9] = mat[9];
 }
 
-Matrix3::Matrix3(float indexA, float indexB, float indexC, float indexD, float indexE, float indexF)
+Matrix3::Matrix3(float indexA, float indexB, float indexC, float indexD)
 {
-	mMat[1] = indexA;
-	mMat[2] = indexB;
-	mMat[3] = indexC;
-	mMat[4] = indexD;
-	mMat[5] = indexE;
-	mMat[6] = indexF;
+	mMat[9] = indexA;
+	mMat[9] = indexB;
+	mMat[9] = indexC;
+	mMat[9] = indexD;
 }
 
 Matrix3 Matrix3::operator+(Matrix3 & other)

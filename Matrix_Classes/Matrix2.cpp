@@ -4,6 +4,7 @@
 using namespace std;
 Matrix2::Matrix2()
 {
+
 }
 
 Matrix2::Matrix2(float mat[])
