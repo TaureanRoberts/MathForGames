@@ -3,7 +3,7 @@
 
 int main()
 {
-	Math; 
+	Math test1;
 
 	system("pause");
 }
