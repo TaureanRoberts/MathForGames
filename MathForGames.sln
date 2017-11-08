@@ -13,7 +13,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Practice", "Practice\Practi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrix_Classes", "Matrix_Classes\Matrix_Classes.vcxproj", "{CC594856-9342-4668-A4BF-7FA50585AEE0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector_Class", "Vector_Class\Vector_Class.vcxproj", "{92913335-7A3C-470C-BC58-3DE6AA88EC94}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector2Class", "Vector_Class\Vector_Class.vcxproj", "{92913335-7A3C-470C-BC58-3DE6AA88EC94}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Q3US-MathForGames", "Q3US-MathForGames\Q3US-MathForGames.vcxproj", "{04AB37B8-CF87-4E2C-8155-BF39E5373173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{92913335-7A3C-470C-BC58-3DE6AA88EC94}.Release|x64.Build.0 = Release|x64
 		{92913335-7A3C-470C-BC58-3DE6AA88EC94}.Release|x86.ActiveCfg = Release|Win32
 		{92913335-7A3C-470C-BC58-3DE6AA88EC94}.Release|x86.Build.0 = Release|Win32
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Debug|x64.ActiveCfg = Debug|x64
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Debug|x64.Build.0 = Debug|x64
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Debug|x86.ActiveCfg = Debug|Win32
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Debug|x86.Build.0 = Debug|Win32
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x64.ActiveCfg = Release|x64
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x64.Build.0 = Release|x64
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x86.ActiveCfg = Release|Win32
+		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
