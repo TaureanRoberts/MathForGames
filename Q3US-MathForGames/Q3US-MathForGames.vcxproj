@@ -69,7 +69,6 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ExecutablePath>C:\Users\s178030\Documents\Visual Studio 2015\Projects\MathForGames\Q3US-MathForGames;$(ExecutablePath)</ExecutablePath>
     <ReferencePath>$(SolutionDir)Projects\MathForGames\Q3US-MathForGames;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

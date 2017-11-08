@@ -52,10 +52,15 @@ Matrix3 Matrix3::operator-(Matrix3 & other)
 Matrix3 Matrix3::operator*(Matrix3 & other)
 {
 	Matrix3 multiNum;
-	multiNum.mMat[1] = ((mMat[1] * other.mMat[1]) + (mMat[2] * other.mMat[3]));
-	multiNum.mMat[2] = ((mMat[1] * other.mMat[2]) + (mMat[2] * other.mMat[4]));
-	multiNum.mMat[3] = ((mMat[3] * other.mMat[1]) + (mMat[4] * other.mMat[3]));
-	multiNum.mMat[4] = ((mMat[3] * other.mMat[2]) + (mMat[4] * other.mMat[4]));
+	multiNum.mMat[1] = ((mMat[1] * other.mMat[1]) + (mMat[2] * other.mMat[4]) + (mMat[3] * other.mMat[7]));
+	multiNum.mMat[2] = ((mMat[1] * other.mMat[2]) + (mMat[2] * other.mMat[5]) + (mMat[3] * other.mMat[8]));
+	multiNum.mMat[3] = ((mMat[1] * other.mMat[3]) + (mMat[2] * other.mMat[6]) + (mMat[3] * other.mMat[9]));
+	multiNum.mMat[4] = ((mMat[4] * other.mMat[1]) + (mMat[5] * other.mMat[4]) + (mMat[6] * other.mMat[7]));
+	multiNum.mMat[5] = ((mMat[4] * other.mMat[2]) + (mMat[5] * other.mMat[5]) + (mMat[6] * other.mMat[8]));
+	multiNum.mMat[6] = ((mMat[4] * other.mMat[3]) + (mMat[5] * other.mMat[6]) + (mMat[6] * other.mMat[9]));
+	multiNum.mMat[7] = ((mMat[7] * other.mMat[1]) + (mMat[8] * other.mMat[4]) + (mMat[9] * other.mMat[7]));
+	multiNum.mMat[8] = ((mMat[7] * other.mMat[2]) + (mMat[8] * other.mMat[5]) + (mMat[9] * other.mMat[8]));
+	multiNum.mMat[9] = ((mMat[7] * other.mMat[3]) + (mMat[8] * other.mMat[6]) + (mMat[9] * other.mMat[9]));
 	return multiNum;
 }
 

@@ -52,8 +52,8 @@ Matrix2 Matrix2::operator*(Matrix2 & other)
 
 ostream & operator<<(ostream & output, Matrix2 & other)
 {
-	output << "< " << other.mMat[1] << " , " << other.mMat[2] <<" , " << other.mMat[3]<<" >" << endl;
-	output << "< " << other.mMat[4] << " , " << other.mMat[5] << " >" << endl;
+	output << "< " << other.mMat[1] << " , " << other.mMat[2] << " >" << endl;
+	output << "< " << other.mMat[3] << " , " << other.mMat[4] << " >" << endl;
 	return output;
 }
 
