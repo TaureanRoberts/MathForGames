@@ -5,22 +5,16 @@
 #include <string>
 #include <istream>
 #include <fstream>
+#include <assert.h>
 
 using namespace std;
 
 int main()
 {
-	Vector2 test2;
-	Vector3 test1;
-	Vector4 test3;
+	Vector2 *test1 = new Vector2(1,2);
+	Vector2 *test2 = new Vector2(3,4);
 
-	cin >> test3;
-	cout << test3;
-
-	cin >> test2;
-	cout << test2;
-
-	cin >> test1;
-	cout << test1;
-	system("pause");
+	assert((*test1 + *test2) == Vector2(4,6) == true);
+	assert((*test1 - *test2) == Vector2(2,2) == true);
+	
 }
