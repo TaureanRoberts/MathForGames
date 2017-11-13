@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector2Class", "Vector_Clas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Q3US-MathForGames", "Q3US-MathForGames\Q3US-MathForGames.vcxproj", "{04AB37B8-CF87-4E2C-8155-BF39E5373173}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math_Lib", "Math_Lib\Math_Lib.vcxproj", "{E62764C0-CFAA-4C05-8053-E4212922D8F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x64.Build.0 = Release|x64
 		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x86.ActiveCfg = Release|Win32
 		{04AB37B8-CF87-4E2C-8155-BF39E5373173}.Release|x86.Build.0 = Release|Win32
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Debug|x64.ActiveCfg = Debug|x64
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Debug|x64.Build.0 = Debug|x64
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Debug|x86.ActiveCfg = Debug|Win32
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Debug|x86.Build.0 = Debug|Win32
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Release|x64.ActiveCfg = Release|x64
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Release|x64.Build.0 = Release|x64
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Release|x86.ActiveCfg = Release|Win32
+		{E62764C0-CFAA-4C05-8053-E4212922D8F8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
