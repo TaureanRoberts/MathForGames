@@ -13,8 +13,11 @@ int main()
 {
 	Vector2 *test1 = new Vector2(1,2);
 	Vector2 *test2 = new Vector2(3,4);
-
+	float temp = 2;
 	assert((*test1 + *test2) == Vector2(4,6) == true);
 	assert((*test1 - *test2) == Vector2(2,2) == true);
+	assert((*test1 * temp) == Vector2() == true);
+
+
 	
 }
