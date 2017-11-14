@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-class Math
+class Math1
 {
 public:
 	float Add(float lhs, float rhs);
