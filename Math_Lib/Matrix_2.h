@@ -24,7 +24,7 @@ public:
 	Matrix2(float mat[]);
 	//Prototype: Matrix2(float indexA, float indexB, float indexC, float indexD);
 	//Description: sets arguements for an array
-	//Precondition: takes floats into a array
+	//Precondition: takes floats into an empty array
 	//Post Condition: sets floats at set index
 	//Protection Level: Public
 	Matrix2(float indexA, float indexB, float indexC, float indexD);

@@ -4,7 +4,13 @@ using namespace std;
 class Matrix4
 {
 public:
+	//Prototype:
+	//Description:
+	//Precondition:
+	//PostCondition:
+	//Protection Level:
 	float mMat[16];
+
 	Matrix4();
 	Matrix4(float mat[]);
 	Matrix4(float indexA, float indexB, float indexC, float indexD, float indexE, float indexF, float indexG, float indexH, float indexI, float indexJ, float indexK, float indexL, float indexM, float indexN, float indexO, float indexP);
