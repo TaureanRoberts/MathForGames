@@ -1,85 +1,76 @@
+
 #pragma once
 #include <iostream>
 using namespace std;
 class Vector2
 {
 public:
-	//Prototype: float mX
-	//Description: A float used for geting the x axis in the vector
-	//Precondition: takes a float value
-	//PostCondition: positions on the x axis using the value.
-	//Protection Level: public
-	float mX;
-	//Prototype: float mY
-	//Description: A float used for geting the y axis in the vector
-	//Precondition: takes a float value
-	//PostCondition: positions on the y axis using the value.
-	//Protection Level: public
-	float mY;
+	float mX; // x value
+	float mY; // y value
 	//Prototype: Vector2()
-	//Description: Default Constructor
-	//Precondition: n/a
-	//PostCondition: n/a
-	//Protection Level: public
+	//Description : makes an instance of the Vector2 class
+	//Precondition : none
+	//Postcondition : Constructs the Vector2 instance
+	//Protection Level : Public
 	Vector2();
-	//Prototype: Vector2(float x, float y);
-	//Description: Takes in the x and y axis
-	//Precondition: assigns values to the axis 
-	//PostCondition: returns a point to be set
-	//Protection Level: public
+	//Prototype: Vector2(float x, float y)
+	//Description : sets the X and Y value for the vector
+	//Precondition : an instance of the Vector2 class
+	//Postcondition : sets the X and Y value for the vector
+	//Protection Level : Public
 	Vector2(float x, float y);
-	//Prototype: Vector2 operator +(Vector2 &other);
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
-	Vector2 operator +(Vector2 &other);
-	//Prototype: Vector2 operator -(Vector2 &other);
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
-	Vector2 operator -(Vector2 &other);
-	//Prototype: Vector2 operator *(float &other);
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
+	//Prototype: Vector2 operator+(Vector2 & other)
+	//Description : adds two vectors together
+	//Precondition : an instance of the Vector2 class
+	//Postcondition : returns the sum of two vectors
+	//Protection Level : Public*/
+	Vector2 operator+(Vector2 & other);
+	//Prototype: Vector2 operator-(Vector2 & other)
+	//Description : subtracts two vectors
+	//Precondition : an instance of the Vector2 class
+	//Postcondition : returns the difference of two vectors
+	//Protection Level : Public*/
+	Vector2 operator-(Vector2 & other);
+	//Prototype: Vector2 operator*(float &other)
+	//Description : multiplies two vectors
+	//Precondition : an instance of the Vector2 class
+	//Postcondition : returns the product of two vectors
+	//Protection Level : Public
 	Vector2 operator *(float &other);
-	//Prototype: bool operator == (Vector2 &other)
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
-	bool operator ==(Vector2 &other);
-	//Prototype: float Dot (Vector2 &other)
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
-	float Dot(Vector2 &other);
-	//Prototype: float Magnitude()
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
-	float Magnitude();
-	//Prototype: Vector2 Normalize();
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
+	/*Prototype: bool operator==(Vector2 & other)
+	Description : checks to see if two vectors are equal
+	Precondition : an instance of the Vector2 class
+	Postcondition : checks to see if two vectors are equal
+	Protection Level : Public*/
+	bool operator==(Vector2 & other);
+	/*Prototype: float Dot(Vector2 & other)
+	Description : finds the dot product of the vector
+	Precondition : an instance of the Vector2 class
+	Postcondition : finds the dot product of the vector
+	Protection Level : Public*/
+	float Dot(Vector2 & other);
+	/*Prototype: Vector2 Normalize()
+	Description : normalizes the vector after finding the magnitude
+	Precondition : an instance of the Vector2 class
+	Postcondition : normalizes the vector
+	Protection Level : Public*/
 	Vector2 Normalize();
-	//Prototype: friend ostream& operator << (ostream &output, Vector2 &other)
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
-	friend ostream& operator << (ostream &output, Vector2 &other);
-	//Prototype: friend istream& operator >> (istream &input, Vector2 &other)
-	//Description:
-	//Precondition:
-	//PostCondition:
-	//Protection Level: public
+	/*Prototype: float Magnitude()
+	Description : finds the magnitude of the vector
+	Precondition : an instance of the Vector2 class
+	Postcondition : finds the magnitude
+	Protection Level : Public*/
+	float Magnitude();
+	/*Prototype: friend ostream& operator<<(ostream &output, Vector2 &other)
+	Description : outputs the X and Y value to the console
+	Precondition : an instance of the Vector2 class
+	Postcondition : outputs the X and Y value to the console
+	Protection Level : Public*/
+	friend ostream& operator <<(ostream &output, const Vector2 &other);
+	/*Prototype: friend istream& operator<<(istream &input, Vector2 &other)
+	Description : takes in the X and Y value via user
+	Precondition : an instance of the Vector2 class
+	Postcondition : takes in the X and Y value via user
+	Protection Level : Public*/
 	friend istream& operator >> (istream &input, Vector2 &other);
 };
